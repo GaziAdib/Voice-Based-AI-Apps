@@ -91,3 +91,36 @@ An intelligent **voice-enabled AI interview platform** that allows users to prac
 
 ## 🏗️ Architecture Overview
 
+User Voice/Text
+↓
+Speech Recognition (Google SR)
+↓
+FastAPI Backend
+↓
+Groq LLM (Interview Logic)
+↓
+AI Response + Feedback
+↓
+Text Output + gTTS Audio
+↓
+Streamlit UI + History Storage
+
+
+## ⚙️ Installation & Setup
+
+###  Clone Repository
+git clone https://github.com/GaziAdib/Voice-Based-AI-Apps.git
+cd voice-ai-interview-app
+
+## Create Virtual Environment ##
+python -m venv venv
+source venv/Scripts/activate   # Windows (Git Bash)
+
+pip install -r requirements.txt
+
+
+## Run FastAPI Backend ##
+uvicorn main:app --reload
+
+## Run Streamlit Frontend ##
+streamlit run streamlit_app.py
