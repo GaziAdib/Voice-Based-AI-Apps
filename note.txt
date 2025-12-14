@@ -1,3 +1,2 @@
 audio-recorder-streamlit SpeechRecognition pydub streamlit request
 
-Microsoft VibeVoice-Realtime-0.5B
